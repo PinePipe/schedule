@@ -6,7 +6,7 @@ import Teachers from './components/Teachers';
 import Groups from './components/Groups';
 import Schedule from './components/Schedule';
 import ScheduleView from './components/ScheduleView';
-import logo from './surgu.png'; // Импорт логотипа
+import logo from './surgu.png';
 
 function App() {
   const [subjects, setSubjects] = useState([]);
@@ -17,7 +17,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* Белая полоса сверху с логотипом и кнопками */}
         <header className="top-bar">
           <a href="https://lms.surgu.ru/my/courses.php" target="_blank" rel="noopener noreferrer">
           <img src={logo} alt="Логотип СурГУ" className="logo" />
@@ -30,8 +29,6 @@ function App() {
             <Link to="/edit" className="nav-button">Управление расписанием</Link>
           </nav>
         </header>
-
-        {/* Серый фон с заголовком и белой панелью */}
         <div className="main-content">
           <div className="container">
             <h1>Расписание</h1>
